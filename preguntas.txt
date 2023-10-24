@@ -1,0 +1,16 @@
+Dado el dataset que se adjunta, contestar las siguientes preguntas:
+
+- ¿Qué método de pandas utilizarías para cargar la información en un dataframe?
+Usaría el método "read_csv" ya que se nos proporciona un fichero de formato csv.
+
+- ¿Qué alternativa a pandas podrías utilizar?
+En caso no de no tener pandas podríamos utilizar la librería numpy con el método "loadtxt" por ejemplo. También
+se podría leer el fichero línea por línea usando "open".
+
+- ¿Qué procedimientos harías para hacer una limpieza de los datos?
+En el caso del fichero proporcionado realizaría los siguientes pasos:
+    1.Comprobar nulos en las columnas "df.isnull().any()"
+    2.Comprobar que no hay problemas de lógica, por ejemplo, comprobar que no hay años de experiencia o tamaño de familia negativos.
+    3.Comprobar valores atípicos podemos revisar primero con un diagrama de caja y bigote y luego utilizar la librería de 
+    scikit-learn para limpiar los mismos.
+    4.Comprobar duplicidad de clientes
